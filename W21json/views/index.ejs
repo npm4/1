@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bookstore</title></head>
+<body>
+  <h1>Books</h1>
+  <a href="/add">Add New Book</a>
+  <table border="1">
+    <tr>
+      <th>Title</th><th>Author</th><th>Price</th><th>Genre</th><th>Actions</th>
+    </tr>
+    <% books.forEach(book => { %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.author %></td>
+        <td><%= book.price %></td>
+        <td><%= book.genre %></td>
+        <td>
+          <a href="/edit/<%= book.id %>">Edit</a> |
+          <a href="/delete/<%= book.id %>">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

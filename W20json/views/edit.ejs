@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Employee</title></head>
+<body>
+  <h1>Edit Employee</h1>
+  <form method="POST" action="/edit/<%= employee.id %>">
+    Name: <input name="name" value="<%= employee.name %>"><br>
+    Department: <input name="department" value="<%= employee.department %>"><br>
+    Designation: <input name="designation" value="<%= employee.designation %>"><br>
+    Salary: <input name="salary" type="number" value="<%= employee.salary %>"><br>
+    Joining Date: <input name="joiningDate" type="date" value="<%= employee.joiningDate %>"><br>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>

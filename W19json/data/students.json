@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "ABC",
+    "Roll_No": 111,
+    "WAD_Marks": 25,
+    "CC_Marks": 25,
+    "DSBDA_Marks": 25,
+    "CNS_Marks": 25,
+    "AI_Marks": 25
+  },
+  {
+    "Name": "XYZ",
+    "Roll_No": 222,
+    "WAD_Marks": 20,
+    "CC_Marks": 15,
+    "DSBDA_Marks": 28,
+    "CNS_Marks": 30,
+    "AI_Marks": 18
+  }
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Songs</title>
+</head>
+<body>
+  <h1>Songs List (Total: <%= count %>)</h1>
+  <table border="1">
+    <tr>
+      <th>Song</th><th>Film</th><th>Director</th><th>Singer</th><th>Actor</th><th>Actress</th><th>Actions</th>
+    </tr>
+    <% songs.forEach(s => { %>
+      <tr>
+        <td><%= s.Songname %></td>
+        <td><%= s.Film %></td>
+        <td><%= s.Music_director %></td>
+        <td><%= s.Singer %></td>
+        <td><%= s.Actor || '-' %></td>
+        <td><%= s.Actress || '-' %></td>
+        <td>
+          <a href="/delete/<%= s.Songname %>">Delete</a> |
+          <a href="/update/<%= s.Songname %>">Update</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+  <br>
+  <a href="/add">Add New Song</a>
+</body>
+</html>

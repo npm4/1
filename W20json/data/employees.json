@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "department": "HR",
+    "designation": "Manager",
+    "salary": 50000,
+    "joiningDate": "2022-01-15"
+  },
+  {
+    "id": 1746472725060,
+    "name": "da",
+    "department": "awd",
+    "designation": "da",
+    "salary": 324,
+    "joiningDate": "2025-05-07"
+  }
+]

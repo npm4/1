@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Book</title></head>
+<body>
+  <h1>Edit Book</h1>
+  <form method="POST" action="/edit/<%= book.id %>">
+    Title: <input name="title" value="<%= book.title %>"><br>
+    Author: <input name="author" value="<%= book.author %>"><br>
+    Price: <input name="price" type="number" value="<%= book.price %>"><br>
+    Genre: <input name="genre" value="<%= book.genre %>"><br>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
