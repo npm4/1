@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PICT Student Clubs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .club-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>PICT Clubs</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Explore Student Clubs</h2>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#coding">Coding Club</a></li>
+      <li><a href="#robotics">Robotics Club</a></li>
+      <li><a href="#dance">Dance Club</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Coding Club -->
+<div data-role="page" id="coding">
+  <div data-role="header">
+    <h1>Coding Club</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+
+  <div data-role="content">
+    <p><strong>Description:</strong> The Coding Club promotes competitive programming and development skills among students.</p>
+    <p><strong>Achievements:</strong></p>
+    <ul>
+      <li>Top 10 in ACM-ICPC Regional</li>
+      <li>Winners of Smart India Hackathon</li>
+    </ul>
+    <img src="https://via.placeholder.com/400x200?text=Coding+Club" alt="Coding Club" class="club-image">
+  </div>
+</div>
+
+<!-- Robotics Club -->
+<div data-role="page" id="robotics">
+  <div data-role="header">
+    <h1>Robotics Club</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+
+  <div data-role="content">
+    <p><strong>Description:</strong> Focused on building and programming robots for competitions and innovation.</p>
+    <p><strong>Achievements:</strong></p>
+    <ul>
+      <li>Winners of Robocon India</li>
+      <li>Finalists at TechFest IIT Bombay</li>
+    </ul>
+    <img src="https://via.placeholder.com/400x200?text=Robotics+Club" alt="Robotics Club" class="club-image">
+  </div>
+</div>
+
+<!-- Dance Club -->
+<div data-role="page" id="dance">
+  <div data-role="header">
+    <h1>Dance Club</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+
+  <div data-role="content">
+    <p><strong>Description:</strong> The Dance Club is a group of passionate dancers who perform at cultural and inter-college fests.</p>
+    <p><strong>Achievements:</strong></p>
+    <ul>
+      <li>Winners at MIT Cultural Fest</li>
+      <li>Performed at Mood Indigo (IIT Bombay)</li>
+    </ul>
+    <img src="https://via.placeholder.com/400x200?text=Dance+Club" alt="Dance Club" class="club-image">
+  </div>
+</div>
+
+</body>
+</html>
+

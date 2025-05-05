@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Movie Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .poster {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Movie Reviews</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#inception">Inception</a></li>
+      <li><a href="#interstellar">Interstellar</a></li>
+      <li><a href="#joker">Joker</a></li>
+      <li><a href="#parasite">Parasite</a></li>
+      <li><a href="#endgame">Avengers: Endgame</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Movie 1 -->
+<div data-role="page" id="inception">
+  <div data-role="header">
+    <h1>Inception</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/51nbVEuw1HL._AC_SY679_.jpg" alt="Inception Poster" class="poster">
+    <p><strong>Genre:</strong> Sci-Fi, Action</p>
+    <p><strong>Summary:</strong> A skilled thief enters people's dreams to steal secrets but faces challenges when hired to plant an idea.</p>
+    <p><strong>Review:</strong> A mind-bending masterpiece by Christopher Nolan. Stunning visuals and layered storytelling keep you engaged till the end.</p>
+  </div>
+</div>
+
+<!-- Movie 2 -->
+<div data-role="page" id="interstellar">
+  <div data-role="header">
+    <h1>Interstellar</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/71n-sGb6-oL._AC_SL1111_.jpg" alt="Interstellar Poster" class="poster">
+    <p><strong>Genre:</strong> Sci-Fi, Adventure</p>
+    <p><strong>Summary:</strong> A team of explorers travel through a wormhole in space to find a new home for humanity.</p>
+    <p><strong>Review:</strong> Emotionally powerful and visually breathtaking. A must-watch for sci-fi lovers and dreamers alike.</p>
+  </div>
+</div>
+
+<!-- Movie 3 -->
+<div data-role="page" id="joker">
+  <div data-role="header">
+    <h1>Joker</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/81s+5CWk1tL._AC_SY679_.jpg" alt="Joker Poster" class="poster">
+    <p><strong>Genre:</strong> Drama, Thriller</p>
+    <p><strong>Summary:</strong> A mentally troubled comedian turns to a life of crime and chaos in Gotham City.</p>
+    <p><strong>Review:</strong> Joaquin Phoenix delivers a haunting, Oscar-winning performance. A gritty, powerful exploration of society and identity.</p>
+  </div>
+</div>
+
+<!-- Movie 4 -->
+<div data-role="page" id="parasite">
+  <div data-role="header">
+    <h1>Parasite</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/81tD5CG0fXL._AC_SY679_.jpg" alt="Parasite Poster" class="poster">
+    <p><strong>Genre:</strong> Thriller, Drama</p>
+    <p><strong>Summary:</strong> A poor family schemes to become employed by a wealthy family and infiltrate their household.</p>
+    <p><strong>Review:</strong> A brilliant social commentary with unexpected twists. A genre-defying film that deserves all the accolades.</p>
+  </div>
+</div>
+
+<!-- Movie 5 -->
+<div data-role="page" id="endgame">
+  <div data-role="header">
+    <h1>Avengers: Endgame</h1>
+    <a href="#home" data-icon="home">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SL1500_.jpg" alt="Endgame Poster" class="poster">
+    <p><strong>Genre:</strong> Action, Adventure, Superhero</p>
+    <p><strong>Summary:</strong> The Avengers assemble for a final stand against Thanos to undo the destruction he caused.</p>
+    <p><strong>Review:</strong> A spectacular conclusion to over a decade of storytelling. Epic battles, emotions, and fan service galore.</p>
+  </div>
+</div>
+
+</body>
+</html>

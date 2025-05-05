@@ -1,0 +1,39 @@
+<!-- views/students.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Total Students: <%= count %></h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>WAD</th>
+            <th>CC</th>
+            <th>DSBDA</th>
+            <th>CNS</th>
+            <th>AI</th>
+        </tr>
+        <% students.forEach(student => { %>
+        <tr>
+            <td><%= student.Name %></td>
+            <td><%= student.Roll_No %></td>
+            <td><%= student.WAD_Marks %></td>
+            <td><%= student.CC_Marks %></td>
+            <td><%= student.DSBDA_Marks %></td>
+            <td><%= student.CNS_Marks %></td>
+            <td><%= student.AI_Marks %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Details</h2>
+    <div id="userDetails"></div>
+  </div>
+  <script>
+    const user = JSON.parse(localStorage.getItem('user'));
+    const userDetails = document.getElementById('userDetails');
+    if (user) {
+      userDetails.innerHTML = `
+        <p><strong>Full Name:</strong> ${user.name}</p>
+        <p><strong>Email:</strong> ${user.email}</p>
+        <p><strong>Phone:</strong> ${user.phone}</p>
+      `;
+    } else {
+      userDetails.innerHTML = "<p>No user data found.</p>";
+    }
+  </script>
+</body>
+</html>

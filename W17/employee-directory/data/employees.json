@@ -1,0 +1,19 @@
+[
+     {
+       "id": 1,
+       "name": "John Doe",
+       "designation": "Software Engineer",
+       "department": "Engineering",
+       "salary": "$75,000",
+       "profile_image": "/images/john_doe.jpg"
+     },
+     {
+       "id": 2,
+       "name": "Jane Smith",
+       "designation": "Product Manager",
+       "department": "Product",
+       "salary": "$85,000",
+       "profile_image": "/images/jane_smith.jpg"
+     }
+   ]
+   

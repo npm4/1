@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Bookstore</title>
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+    a { margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <h1>Book List</h1>
+  <a href="/add">Add New Book</a>
+  <table>
+    <tr>
+      <th>Title</th><th>Author</th><th>Price (₹)</th><th>Genre</th><th>Actions</th>
+    </tr>
+    <% books.forEach(book => { %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.author %></td>
+        <td><%= book.price %></td>
+        <td><%= book.genre %></td>
+        <td>
+          <a href="/edit/<%= book._id %>">Edit</a> |
+          <a href="/delete/<%= book._id %>">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

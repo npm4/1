@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= buttonText %></title>
+</head>
+<body>
+  <h1><%= buttonText %></h1>
+  <form method="POST" action="<%= action %>">
+    Title: <input name="title" value="<%= book.title || '' %>"><br><br>
+    Author: <input name="author" value="<%= book.author || '' %>"><br><br>
+    Price: <input name="price" type="number" value="<%= book.price || '' %>"><br><br>
+    Genre: <input name="genre" value="<%= book.genre || '' %>"><br><br>
+    <button type="submit"><%= buttonText %></button>
+  </form>
+</body>
+</html>
