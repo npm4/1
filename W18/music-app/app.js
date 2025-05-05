@@ -15,15 +15,15 @@ mongoose.connect('mongodb://localhost:27017/music', {
 // Insert initial songs only once
 // Uncomment for first time then comment again
 
-Song.insertMany([
-    { Songname: "Tum Hi Ho", Film: "Aashiqui 2", Music_director: "Mithoon", Singer: "Arijit Singh" },
-    { Songname: "Kun Faya Kun", Film: "Rockstar", Music_director: "A.R. Rahman", Singer: "Mohit Chauhan" },
-    { Songname: "Kal Ho Naa Ho", Film: "Kal Ho Naa Ho", Music_director: "Shankar-Ehsaan-Loy", Singer: "Sonu Nigam" },
-    { Songname: "Channa Mereya", Film: "Ae Dil Hai Mushkil", Music_director: "Pritam", Singer: "Arijit Singh" },
-    { Songname: "Tera Ban Jaunga", Film: "Kabir Singh", Music_director: "Akhil Sachdeva", Singer: "Tulsi Kumar" }
-])
-.then(() => console.log("Songs added"))
-.catch(err => console.log(err));
+// Song.insertMany([
+//     { Songname: "Tum Hi Ho", Film: "Aashiqui 2", Music_director: "Mithoon", Singer: "Arijit Singh" },
+//     { Songname: "Kun Faya Kun", Film: "Rockstar", Music_director: "A.R. Rahman", Singer: "Mohit Chauhan" },
+//     { Songname: "Kal Ho Naa Ho", Film: "Kal Ho Naa Ho", Music_director: "Shankar-Ehsaan-Loy", Singer: "Sonu Nigam" },
+//     { Songname: "Channa Mereya", Film: "Ae Dil Hai Mushkil", Music_director: "Pritam", Singer: "Arijit Singh" },
+//     { Songname: "Tera Ban Jaunga", Film: "Kabir Singh", Music_director: "Akhil Sachdeva", Singer: "Tulsi Kumar" }
+// ])
+// .then(() => console.log("Songs added"))
+// .catch(err => console.log(err));
 
 
 // d) Count and list all
